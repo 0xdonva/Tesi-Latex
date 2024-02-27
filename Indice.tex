@@ -1,0 +1,247 @@
+%\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper,oneside,onecolumn,openright]{book}
+% set the document language
+\usepackage[italian]{babel}
+% set the encoding used by your editor here (default is utf8)
+\usepackage[utf8]{inputenc}
+
+% math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+% page margins settings
+\usepackage[inner=3cm,outer=2.5cm,top=3cm,bottom=2.5cm]{geometry}
+%\usepackage{indentfirst}
+
+
+% other packages
+\usepackage{array}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+% custom colors
+\usepackage{color}
+\definecolor{light-gray}{gray}{0.96}
+\definecolor{cyan}{RGB}{230,230,255}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\setcounter{section}{0}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+{
+    \large
+    \textbf{Università  degli studi di Modena e Reggio Emilia} \\
+   	\textbf{Dipartimento di Scienze Fisiche, Informatiche e Matematiche} \\
+    \vspace{\stretch{0.5}}
+    \hspace*{0cm} \hrulefill \hspace*{0cm} \\
+    \vspace{\stretch{0.5}}
+   	\emph{Corso di Laurea in Informatica}
+    
+	  \vspace{\stretch{12}}
+  
+  
+ 		\huge{\bf Strategie Innovative di Sicurezza}}\\
+		\vspace{3mm}
+		{\huge{\bf Informatica: monitoraggio delle reti}}\\
+		\vspace{3mm}
+		\vspace{3mm}
+		{\huge{\bf  grazie a Darktrace e Tpot}}\\
+		\vspace{3mm}
+		\vspace{3mm}
+		
+		\vspace{\stretch{6}}
+		\end{center}
+		
+\vspace{40mm}
+\par
+\noindent
+\begin{minipage}[t]{0.47\textwidth}
+{\large{\bf Relatore:\\
+Prof.
+Ferretti Luca}}\\ 
+\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.47\textwidth}\raggedleft
+{\large{\bf Candidato:\\
+Matteo Violi}}
+\end{minipage}
+\vspace{20mm}
+\begin{center}
+%\rule[0.1cm]{15.8cm}{0.1mm}
+\hspace*{0cm} \hrulefill \hspace*{0cm} \\
+{\large{\bf 
+Anno Accademico 2023/2024}}
+\end{center}
+
+\end{titlepage}
+
+\tableofcontents
+
+\chapter{Introduzione}
+\section{Contestualizzazione del tirocinio curricolare universitario}
+\section{Scopo delle tesi}
+
+
+\chapter{Fondamenti teorici su Honeypot e IDS}
+\section{Introduzione agli honeypot}
+\subsection{Definizione e scopo}
+Nel 1989, Clifford Stoll pubblica quello che poi diventerà uno dei classici della 
+letteratura sulla sicurezza informatica: \textbf{The Cuckoo's Egg}. 
+Nel romanzo, Stoll racconta di aver scoperto un tentativo di intrusione informatica 
+nei sistemi del laboratorio del Lawrence Berkeley National Laboratory, 
+dove lavorava come astrofisico.\\
+Analizzando delle discrepanze sulle fatture di addebito per l'uso di risorse informatiche 
+e cercando di capirne la causa, Stoll inizia a seguire le tracce digitali lasciate, 
+le quali lo condurranno fino a un hacker. Quest'ultimo si rivelò essere Markuss Hess, 
+hacker tedesco famoso per aver violato sistemi più di quattrocento sistemi dell'esercito 
+americano per poi vendere tutte le informazioni ai servizi di intelligence sovietici.\\
+Hess venne scoperto grazie a un'idea di Stoll: un finto portale vulnerabile del 
+Lawrence Berkeley National Laboratory. Questo gli permise di stabilire una connessione 
+e localizzare il criminale. Stoll definì questa sua creazione una \textit{hoax}, 
+una sorta di burla o truffa.\\
+Uno dei primi documenti che trattava l'uso di trappole per attirare hacker malevoli 
+fu redatto da William Cheswick, un pioniere della sicurezza informatica e l'ideatore di 
+uno dei primi firewall. Cheswick creò quello che in quell'epoca chiamò "roach motel", 
+una trappola progettata per intrappolare gli hacker, ispirandosi alla metafora di un 
+motel per scarafaggi.\\
+Nel corso degli anni, il termine \textit{honeypot} ha guadagnato sempre più popolarità, 
+in quanto associato alla tradizione folkloristica dei popoli germanici, 
+slavi e celtici. Secondo questa tradizione, gli orsi tendono a rubare il miele dagli 
+alveari, un parallelismo che riflette l'idea di attirare e intrappolare gli 'hacker' 
+simili a predatori.\\
+In generale, un honeypot è costituito da un sistema informatico che simula un 
+sistema legittimo, rendendolo vulnerabile ai più comuni attacchi informatici. 
+L'obiettivo è di deviare l'attaccante dalle macchine reali e critiche, consentendo 
+nel contempo lo studio dei loro comportamenti e delle tecniche di attacco durante e 
+dopo la fase di \textit{exploitation}.\\
+
+\subsection{Tipologie di honeypot}
+Dal momento della loro concezione, possiamo categorizzare le diverse tipologie di 
+honeypot in base alle risorse allocate o al contesto di utilizzo.\\
+Per quanto riguarda le risorse, possiamo suddividerli in due categorie principali:
+\begin{itemize}
+	\item \textbf{Honeypot Fisici}: Questi utilizzano macchine reali con indirizzi IP 
+	dedicati, simulando comportamenti modellati dal sistema. Tuttavia, questo modello 
+	è raramente adottato a causa dell'alto costo di acquisizione, manutenzione e 
+	delle specifiche esigenze hardware.
+	\item \textbf{Honeypot Virtuali}: Questa tipologia consente l'installazione e la 
+	simulazione di un host sulla rete, assegnando un indirizzo IP alla macchina virtuale. 
+	Questo approccio è il più diffuso, offrendo un equilibrio tra efficacia e praticità.
+\end{itemize}
+Per quanto riguarda il contesto di utilizzo, possiamo distinguere:
+\begin{itemize}
+	\item \textbf{Honeypot di Produzione}: Questi honeypot sono progettati per un 
+	utilizzo semplice, immagazzinano un numero limitato di informazioni e sono 
+	spesso implementati in contesti aziendali. Collocati all'interno della rete 
+	aziendale insieme agli altri server di produzione, raccolgono meno dati e 
+	operano a bassa intensità.
+	\item \textbf{Honeypot di Ricerca}: Questi honeypot sono finalizzati alla raccolta 
+	di informazioni sulle metodologie di attacco degli aggressori. Non forniscono un 
+	valore specifico a un'organizzazione particolare, ma sono più complessi da installare 
+	e mantenere, raccogliendo un'ampia quantità di dati.
+\end{itemize}
+Recentemente, il mercato legato a questi servizi ha introdotto nuove tipologie 
+di honeypot che estendono le funzionalità di base e incorporano tecniche di inganno, 
+automatizzando la scalabilità su grandi reti. Le tipologie più diffuse includono:
+\begin{itemize}
+	\item \textbf{Honeypot malware}: Questi honeypot simulano un sistema vulnerabile 
+	agli attacchi più comuni da parte di malware, consentendo uno studio approfondito 
+	del malware, delle sue origini e del suo comportamento.
+	\item \textbf{Honeypot spam}: Questi honeypot simulano relay di posta aperti o 
+	proxy aperti, comunemente utilizzati dagli spammer. Ciò consente di rivelare 
+	l'indirizzo IP dello spammer e fornire una cattura in blocco dello spam.
+	\item \textbf{Honeypot database}: Questi honeypot simulano database con 
+	possibili vulnerabilità, come ad esempio SQL Injection.
+	\item \textbf{Honeypot ICS}: Questi honeypot simulano sistemi di controllo industriale 
+	come i PLC (controller logico programmabile).
+\end{itemize}
+
+\subsection{Tpot: panoramica}
+\subsection{Tpot: scopo e utilità in ambiente di tirocinio}
+
+\section{Teoria sugli IDS}
+\subsection{Evoluzione e storia degli IDS}
+Il primo concetto preliminare di sistema di rilevamento delle intrusioni (IDS) 
+è stato descritto nel 1980 da James Anderson presso la National Security Agency 
+e comprendeva un insieme di strumenti per gli amministratori per esaminare i registri 
+di audit. Nel febbraio del 1987, Dorothy E. Denning, assistita da Peter G. Neumann 
+presso IDS International, pubblicò un documento intitolato "An Intrusion Detection Model".\\
+Questo modello presentava un sistema esperto basato su regole per rilevare pattern 
+di intrusioni note e una componente di rilevazione statistica basata su profili di 
+utenti, sistemi host e sistemi di destinazione, diventando noto come Intrusion Detection 
+Expert System.\\
+Nel 1993, Teresa F. Lunt, autrice di "IDES: An Intelligent System for Detecting Intruders", 
+aggiunse l'ultimo componente al modello di Denning: una rete neurale artificiale capace di 
+adattarsi agli eventi e modificarsi. \\
+Un sistema di rilevamento delle intrusioni (IDS) è un dispositivo software o un'applicativo 
+che monitora una rete o i dispositivi su cui è installato. Quando rileva un'anomalia, 
+la segnala a un sistema di raccolta di eventi di sicurezza (SIEM), che utilizza tecniche 
+di filtraggio degli allarmi per distinguere falsi positivi da attività dannose.\\
+Gli IDS, come un firewall, vengono utilizzati per prevenire intrusioni nella rete, 
+ma differiscono dalla risposta a tali intrusioni. I sistemi di rilevamento delle 
+intrusioni possono anche avere scopi specifici integrandoli con strumenti personalizzati, 
+come l'utilizzo di un honeypot per attirare e caratterizzare il traffico dannoso.\\
+Recentemente, alcuni prodotti IDS hanno la capacità di rispondere alle intrusioni 
+rilevate, denominati sistemi di rilevamento e prevenzione delle intrusioni (IDPS). 
+Gli IDPS aggiungono la capacità di fermare un attacco rilevato, registrare gli eventi, 
+avvisare gli amministratori, bloccare la minaccia e generare rapporti. A differenza 
+degli IDS, gli IDPS devono essere posizionati "in linea", monitorando in tempo reale 
+per bloccare intrusioni, inviare allarmi, rifiutare pacchetti dannosi e correggere 
+errori di rete.\\
+
+\subsection{Tipologie di IDS}
+La classificazione tipica dei sistemi di intrusione si basa sulla loro posizione:
+\begin{itemize}
+	\item \textbf{NIDS (Network IDS)}: Posizionati strategicamente nella rete, 
+	monitorano il traffico da e verso tutti i dispositivi, analizzando idealmente 
+	sia l'entrata che l'uscita. L'uso di reti neurali artificiali può migliorare i 
+	tassi di rilevamento grazie alla capacità di analizzare grandi volumi di dati 
+	in modo intelligente e apprendere dagli errori, sviluppando un sistema di avviso precoce.
+	\item \textbf{HIDS (Host IDS)}: Operano su singoli host o dispositivi, monitorando 
+	solo i pacchetti in entrata e in uscita. Consentono l'analisi del traffico di rete 
+	criptato, una volta arrivato all'host.
+\end{itemize}
+Gli IDS possono essere classificati anche in base all'approccio di rilevamento:
+\begin{itemize}
+	\item \textbf{Signature-based}: Ricerca pattern specifici, simile all'azione degli 
+	antivirus per individuare sequenze di byte o istruzioni malevole conosciute. 
+	Risponde velocemente a attacchi noti, ma può non riconoscere nuovi attacchi senza pattern noti.
+	\item \textbf{Anomaly-based}: Utilizza l'apprendimento automatico per creare un 
+	modello di attività affidabile e confrontare il nuovo comportamento. Riesce a 
+	rilevare attacchi sconosciuti, ma potrebbe generare falsi positivi, identificando 
+	attività legittime come malevoli.
+\end{itemize}
+
+\subsection{Darktrace: panoramica}
+\subsection{Darktrace: funzionamento}
+
+\chapter{Sperimentazione con Tpot e Darktrace}
+\section{Implementazione di Tpot e analisi dei risultati}
+\subsection{Configurazione di base}
+\subsection{Simulazione di server in produzione}
+\subsection{Dati raccolti}
+\subsection{Esperienze pratiche durante il tirocinio}
+
+\section{Monitoraggio delle reti con Darktrace}
+\subsection{Studi di caso}
+\subsection{Esempi di minacce rilevate}
+
+\section{Integrare Darktrace e Tpot per una maggiore sicurezza}
+
+\chapter{Conclusioni}
+\section{Riassunto delle principali conclusioni}
+\section{Riflessioni personali sull'esperienza di tirocinio}
+\section{Suggerimenti per future ricerche o sviluppi in questo ambito}
+
+\chapter{Bibliografia}
+
+\chapter{Ringraziamenti}
+
+\end{document}

@@ -1,0 +1,32 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduzione}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Contestualizzazione del tirocinio curricolare universitario}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Scopo delle tesi}{2}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Fondamenti teorici su Honeypot e IDS}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduzione agli honeypot}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Definizione e scopo}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Tipologie di honeypot}{4}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Tpot: panoramica}{5}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Tpot: scopo e utilità in ambiente di tirocinio}{5}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Teoria sugli IDS}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Evoluzione e storia degli IDS}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Tipologie di IDS}{5}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Darktrace: panoramica}{6}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Darktrace: funzionamento}{6}{subsection.2.2.4}%
+\contentsline {chapter}{\numberline {3}Sperimentazione con Tpot e Darktrace}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Implementazione di Tpot e analisi dei risultati}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Configurazione di base}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Simulazione di server in produzione}{7}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Dati raccolti}{7}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Esperienze pratiche durante il tirocinio}{7}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Monitoraggio delle reti con Darktrace}{7}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Studi di caso}{7}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Esempi di minacce rilevate}{7}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Integrare Darktrace e Tpot per una maggiore sicurezza}{7}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Conclusioni}{8}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Riassunto delle principali conclusioni}{8}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Riflessioni personali sull'esperienza di tirocinio}{8}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Suggerimenti per future ricerche o sviluppi in questo ambito}{8}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Bibliografia}{9}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Ringraziamenti}{10}{chapter.6}%
