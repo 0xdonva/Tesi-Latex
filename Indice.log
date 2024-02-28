@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.15)  5 FEB 2024 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.28)  28 FEB 2024 01:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/donva/Documenti/Tesi/Indice.tex
-(/home/donva/Documenti/Tesi/Indice.tex
+**/home/donva/Documenti/Tesi-Latex/Indice.tex
+(/home/donva/Documenti/Tesi-Latex/Indice.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
@@ -317,41 +317,84 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip61
-) (/usr/share/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+) (/usr/share/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen173
+\WF@size=\dimen174
+\c@WF@wrappedlines=\count304
+\WF@box=\box57
+\WF@everypar=\toks29
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count305
+\l__pdf_internal_box=\box58
+))
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count306
+\l__lipsum_a_int=\count307
+\l__lipsum_b_int=\count308
+ (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
+\@cmidla=\count309
+\@cmidlb=\count310
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
+\@thisruleclass=\count311
+\@lastruleclass=\count312
+\@thisrulewidth=\dimen187
+) (/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
  (/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 149.
- (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package color Info: Redefining color cyan on input line 27.
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box57
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+ (/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
 ) (./Indice.aux)
 \openout1 = `Indice.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \it@ocap on input line 34.
-LaTeX Info: Redefining \it@ccap on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Info: Redefining \it@ocap on input line 35.
+LaTeX Info: Redefining \it@ccap on input line 35.
 
 
 File italian.ldf warning: 
@@ -359,7 +402,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 34.
+italian.ldf    on input line 35.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -397,36 +440,36 @@ italian.ldf    on input line 34.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen173
-\scratchbox=\box58
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen174
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count313
+\scratchdimen=\dimen188
+\scratchbox=\box59
+\nofMPsegments=\count314
+\nofMParguments=\count315
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count316
+\MPscratchDim=\dimen189
+\MPnumerator=\count317
+\makeMPintoPDFobject=\count318
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c@lstlisting=\count311
-Package hyperref Info: Link coloring OFF on input line 34.
+\c@lstlisting=\count319
+Package hyperref Info: Link coloring OFF on input line 35.
  (./Indice.out) (./Indice.out)
 \@outlinefile=\write3
 \openout3 = `Indice.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--69
+Underfull \hbox (badness 10000) in paragraph at lines 66--70
 
  []
 
@@ -449,13 +492,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.87 \chapter
+l.88 \chapter
              {Introduzione} [1
 
 ]
 Capitolo 1.
 
-Overfull \hbox (7.83998pt too wide) in paragraph at lines 88--88
+Overfull \hbox (7.83998pt too wide) in paragraph at lines 89--89
 []\OT1/cmr/bx/n/17.28 Contestualizzazione del ti-ro-ci-nio cur-ri-co-la-re uni-
  []
 
@@ -464,50 +507,86 @@ Overfull \hbox (7.83998pt too wide) in paragraph at lines 88--88
 ]
 Capitolo 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--124
+Underfull \hbox (badness 10000) in paragraph at lines 96--125
 
  []
 
 [3
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 171--198
+] [4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [5]
+<IDStimeline.png, id=195, 481.8pt x 260.975pt>
+File: IDStimeline.png Graphic file (type png)
+<use IDStimeline.png>
+Package pdftex.def Info: IDStimeline.png  used on input line 197.
+(pdftex.def)             Requested size: 198.45662pt x 107.49423pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--226
 
  []
 
-[4{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [5] [6]
+[6 <./IDStimeline.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 252--256
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--262
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--281
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--289
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+[8]
 Capitolo 3.
-[7
-
-]
-Capitolo 4.
-[8
-
-]
-Capitolo 5.
 [9
 
 ]
-Capitolo 6.
+Capitolo 4.
 [10
+
+]
+Capitolo 5.
+[11
+
+]
+Capitolo 6.
+[12
 
 ] (./Indice.aux)
 Package rerunfilecheck Info: File `Indice.out' has not changed.
-(rerunfilecheck)             Checksum: ECC5CCE4EBB33B0F58875FB2BFE22FD4;6257.
+(rerunfilecheck)             Checksum: F52D275080A442EFB3AE821FD6BB9154;6367.
  ) 
 Here is how much of TeX's memory you used:
- 13058 strings out of 477974
- 201100 string characters out of 5839630
+ 14064 strings out of 477974
+ 218954 string characters out of 5839630
  1862388 words of memory out of 5000000
- 33042 multiletter control sequences out of 15000+600000
+ 34014 multiletter control sequences out of 15000+600000
  520439 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,5n,76p,449b,507s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,77p,455b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Indice.pdf (11 pages, 89203 bytes).
+Output written on Indice.pdf (13 pages, 115761 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 

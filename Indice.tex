@@ -21,8 +21,9 @@
 \usepackage{listings}
 \usepackage{url}
 \usepackage[hidelinks]{hyperref}
+\usepackage{wrapfig,lipsum,booktabs}
 % custom colors
-\usepackage{color}
+\usepackage{xcolor}
 \definecolor{light-gray}{gray}{0.96}
 \definecolor{cyan}{RGB}{230,230,255}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
@@ -108,7 +109,7 @@ e localizzare il criminale. Stoll definì questa sua creazione una \textit{hoax}
 una sorta di burla o truffa.\\
 Uno dei primi documenti che trattava l'uso di trappole per attirare hacker malevoli 
 fu redatto da William Cheswick, un pioniere della sicurezza informatica e l'ideatore di 
-uno dei primi firewall. Cheswick creò quello che in quell'epoca chiamò "roach motel", 
+uno dei primi firewall. Cheswick creò quello che in quell'epoca chiamò \textit{roach motel}, 
 una trappola progettata per intrappolare gli hacker, ispirandosi alla metafora di un 
 motel per scarafaggi.\\
 Nel corso degli anni, il termine \textit{honeypot} ha guadagnato sempre più popolarità, 
@@ -162,12 +163,39 @@ automatizzando la scalabilità su grandi reti. Le tipologie più diffuse includo
 	\item \textbf{Honeypot ICS}: Questi honeypot simulano sistemi di controllo industriale 
 	come i PLC (controller logico programmabile).
 \end{itemize}
+\newpage
 
 \subsection{Tpot: panoramica}
+La piattaforma T-Pot, sviluppata da Deutsche Telekom Security GmbH, è distribuita 
+sotto licenza GPL-3.0, un modello copyleft per il software libero. 
+Basata su Debian 11 per architetture amd64 e arm64, utilizza Docker e Docker-compose 
+per eseguire simultaneamente una vasta gamma di strumenti e sfruttare appieno le 
+risorse hardware dell'host. \\
+T-Pot offre una serie di servizi suddivisi in cinque categorie principali:
+\begin{enumerate}
+	\item Connessione tramite SSH e Cockpit per la gestione attraverso un'interfaccia web. 
+	\item Elastic Stack, composto da Elasticsearch per l'archiviazione dei dati, Logstash per l'analisi e Kibana per la visualizzazione su dashboard.
+	\item Strumenti quali Cyberchef per la codifica e decodifica dei dati, Elasticvue per l'interazione con un cluster Elasticsearch, T-Pot Attack Map per la visualizzazione degli attacchi in tempo reale e Spiderfoot per l'automazione dell'OSINT.
+	\item Honeypots, che includono una selezione di ventidue honeypot configurabili.
+	\item Monitoraggio della rete attraverso Suricata, un motore di sicurezza di rete.
+\end{enumerate}
+
 \subsection{Tpot: scopo e utilità in ambiente di tirocinio}
+Nell'ambito del tirocinio, lo scopo e l'utilità di T-Pot è stato quello di testare e 
+configurare la piattaforma al fine di generare e inviare avvisi a Sentinel, il sistema 
+SIEM aziendale. L'obiettivo principale era quello di condurre prove in un ambiente 
+controllato prima di implementare la soluzione su un server in produzione. 
+Inoltre, si è pianificato di redigere un manuale dettagliato che documentasse tutti i 
+passaggi per l'installazione e la configurazione di T-Pot, rendendolo accessibile anche 
+a utenti non esperti. Questo avrebbe consentito una rapida e agevole adozione della 
+soluzione da parte dell'azienda e avrebbe fornito una guida utile per futuri aggiornamenti e manutenzioni.
+\newpage
 
 \section{Teoria sugli IDS}
 \subsection{Evoluzione e storia degli IDS}
+\begin{wraptable}{r}{0.45\textwidth}
+	\includegraphics[width=0.45\textwidth]{IDStimeline.png}
+\end{wraptable} 
 Il primo concetto preliminare di sistema di rilevamento delle intrusioni (IDS) 
 è stato descritto nel 1980 da James Anderson presso la National Security Agency 
 e comprendeva un insieme di strumenti per gli amministratori per esaminare i registri 
@@ -196,6 +224,7 @@ degli IDS, gli IDPS devono essere posizionati "in linea", monitorando in tempo r
 per bloccare intrusioni, inviare allarmi, rifiutare pacchetti dannosi e correggere 
 errori di rete.\\
 
+
 \subsection{Tipologie di IDS}
 La classificazione tipica dei sistemi di intrusione si basa sulla loro posizione:
 \begin{itemize}
@@ -220,7 +249,79 @@ Gli IDS possono essere classificati anche in base all'approccio di rilevamento:
 \end{itemize}
 
 \subsection{Darktrace: panoramica}
-\subsection{Darktrace: funzionamento}
+Darktrace, fondata nel 2013 a Cambridge, Regno Unito, da ex-dipendenti dell'intelligence 
+governativa e matematici dell'Università di Cambridge, è un Intrusion Detection and 
+Prevention System (IDPS) che immagazzina e analizza il traffico di rete per lunghi 
+periodi al fine di identificare correlazioni e modelli comportamentali.\\
+
+Utilizzando avanzate tecniche di probabilità bayesiana e machine learning, Darktrace 
+crea un profilo comportamentale unico per ciascun utente e dispositivo all'interno 
+dell'ambiente di rete. Inoltre, è in grado di raggruppare gli utenti e i dispositivi 
+in base ai loro comportamenti, consentendo così di rilevare anomalie nel caso in cui 
+un utente o un dispositivo si discosti dal comportamento tipico del suo gruppo.\\
+
+Operando in tempo reale e analizzando il traffico di rete in modo continuo, Darktrace 
+è in grado di identificare anche gli attacchi "zero-day", che non seguono schemi precedentemente 
+noti. Per garantire l'affidabilità delle segnalazioni, Darktrace utilizza un'intelligente 
+soglia di rilevamento che contestualizza e aggiorna costantemente le segnalazioni in 
+base alle rilevazioni precedenti, riducendo al minimo i falsi positivi e mitigando il 
+rischio di distorsioni dovute al tasso di base.\\
+
+Darktrace è composto da quattro moduli distinti: Darktrace PREVENT, Darktrace DETECT, 
+Darktrace RESPOND e Darktrace HEAL. Tuttavia, durante il tirocinio, ci concentreremo 
+esclusivamente sui moduli DETECT e RESPOND, in quanto sono gli unici utilizzati durante 
+l'esperienza pratica.
+
+\subsection{Darktrace DETECT}
+\subsection{Darktrace RESPOND}
+Darktrace RESPOND/Network è progettato per gestire minacce di sicurezza di alto livello, 
+come ad esempio i ransomware. Utilizzando due approcci distinti, può interrompere le 
+connessioni malevole sia attraverso il reset TCP che integrandosi direttamente con 
+il firewall esistente, inviando messaggi direttamente a esso.\\
+
+Il flag RST del protocollo TCP è una componente delle comunicazioni standard tra 
+dispositivi: quando un endpoint riceve un pacchetto con questo flag attivato, 
+la connessione viene immediatamente interrotta. Darktrace rileva attività sospette e, 
+in caso di anomalie, invia pacchetti di reset TCP a entrambi i dispositivi coinvolti, 
+sia all'interno che all'esterno della rete, per interrompere la connessione malevola. 
+Gli indirizzi IP dei pacchetti di reset sono falsificati per far credere ai dispositivi 
+che non provengano da Darktrace, ma l'uno dall'altro.\\
+
+Darktrace RESPOND può attuare una serie di azioni proattive, misurate e automatizzate 
+in risposta a minacce informatiche confermate rilevate in tempo reale.\\
+
+I componenti di Darktrace RESPOND possono essere utilizzati in due modalità distinte:
+\begin{itemize}
+	\item \textbf{Modalità di conferma umana}: le azioni di Darktrace RESPOND rimarranno in 
+	sospeso fino a quando un operatore umano non conferma o ignora 
+	la segnalazione del modulo RESPOND.
+	\item \textbf{Modalità autonoma o parzialmente autonoma}: in modalità completamente 
+	autonoma, RESPOND risponde automaticamente alle minacce, mentre nella modalità 
+	parzialmente autonoma, può essere attivato autonomamente al di fuori degli orari 
+	lavorativi, ma richiede conferma umana per il resto del tempo.
+\end{itemize}
+
+
+Darktrace RESPOND reagisce alle violazioni dei modelli offrendo l'opzione di impostare 
+un inibitore, che è un'azione finalizzata a contrastare il comportamento anomalo del 
+dispositivo o dell'utente. Gli inibitori disponibili includono:
+\begin{itemize}
+	\item \textbf{Bloccare le connessioni corrispondenti}: Questa opzione interrompe le 
+	connessioni dal dispositivo all'endpoint di destinazione identificato nell'incidente, 
+	sulla porta di destinazione osservata.
+	\item \textbf{Imporre il pattern di vita}: Questa funzione consente al dispositivo 
+	di effettuare solo connessioni e trasferimenti di dati considerati normali da 
+	Darktrace, basati sui modelli di vita definiti per quel dispositivo. 
+	Qualsiasi attività che si discosti da questi modelli viene bloccata.
+	\item \textbf{Imporre il pattern di vita del gruppo}: Questa opzione permette al 
+	dispositivo di intraprendere le stesse connessioni e trasferimenti di dati che 
+	sono comuni tra i dispositivi nel suo gruppo di pari, basandosi sui modelli di vita 
+	del gruppo.
+	\item \textbf{Quarantena del dispositivo}: Questa azione blocca tutto il traffico di 
+	rete in entrata e in uscita dal dispositivo, isolandolo dalla rete.
+	\item \textbf{Blocco di tutti i traffici in uscita}.
+	\item \textbf{Blocco di tutti i traffici in entrata}.
+\end{itemize}
 
 \chapter{Sperimentazione con Tpot e Darktrace}
 \section{Implementazione di Tpot e analisi dei risultati}
