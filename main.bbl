@@ -1,0 +1,563 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{nistHoneypot}{report}{}
+      \name{author}{1}{}{%
+        {{hash=325b3ff4920e721fa110db2bf9493694}{%
+           family={Shirey},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{325b3ff4920e721fa110db2bf9493694}
+      \strng{fullhash}{325b3ff4920e721fa110db2bf9493694}
+      \strng{bibnamehash}{325b3ff4920e721fa110db2bf9493694}
+      \strng{authorbibnamehash}{325b3ff4920e721fa110db2bf9493694}
+      \strng{authornamehash}{325b3ff4920e721fa110db2bf9493694}
+      \strng{authorfullhash}{325b3ff4920e721fa110db2bf9493694}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Internet Security Glossary, Version 2}
+      \field{type}{RFC 4949}
+      \field{year}{2007}
+      \field{dateera}{ce}
+    \endentry
+    \entry{spitzner}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3392c1460e982ea5dfd24b6b6a9f8e06}{%
+           family={Spitzner},
+           familyi={S\bibinitperiod},
+           given={Lance},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{fullhash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{bibnamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authorbibnamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authornamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authorfullhash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Honeypots: Tracking Hackers}
+      \field{year}{2002}
+      \field{dateera}{ce}
+    \endentry
+    \entry{TheCuckoosEgg}{book}{}
+      \name{author}{1}{}{%
+        {{hash=70999afd96ea20823bd266414d0d50f3}{%
+           family={Stoll},
+           familyi={S\bibinitperiod},
+           given={Clifford},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Doubleday}%
+      }
+      \strng{namehash}{70999afd96ea20823bd266414d0d50f3}
+      \strng{fullhash}{70999afd96ea20823bd266414d0d50f3}
+      \strng{bibnamehash}{70999afd96ea20823bd266414d0d50f3}
+      \strng{authorbibnamehash}{70999afd96ea20823bd266414d0d50f3}
+      \strng{authornamehash}{70999afd96ea20823bd266414d0d50f3}
+      \strng{authorfullhash}{70999afd96ea20823bd266414d0d50f3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Cuckoo's Egg}
+      \field{year}{1989}
+    \endentry
+    \entry{cheswick}{article}{}
+      \name{author}{1}{}{%
+        {{hash=89b9eed5c853bae29e5457a88b841db5}{%
+           family={Cheswick},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{89b9eed5c853bae29e5457a88b841db5}
+      \strng{fullhash}{89b9eed5c853bae29e5457a88b841db5}
+      \strng{bibnamehash}{89b9eed5c853bae29e5457a88b841db5}
+      \strng{authorbibnamehash}{89b9eed5c853bae29e5457a88b841db5}
+      \strng{authornamehash}{89b9eed5c853bae29e5457a88b841db5}
+      \strng{authorfullhash}{89b9eed5c853bae29e5457a88b841db5}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{cheswik.com}
+      \field{title}{An Evening with BerferdIn Which a Cracker is Lured, Endured, and Studied}
+      \field{year}{1991}
+    \endentry
+    \entry{bear}{article}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{University of Pittsburg Journal}
+      \field{title}{The word for bear}
+      \field{year}{2014}
+    \endentry
+    \entry{tax}{report}{}
+      \name{author}{1}{}{%
+        {{hash=b90cb4d07d3db1c3f4c055bfeb96e02f}{%
+           family={Iyatiti\bibnamedelima Mokube},
+           familyi={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Michele\bibnamedelima Adams},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Armstrong Atlantic State University}%
+      }
+      \strng{namehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{fullhash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{bibnamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authorbibnamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authornamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authorfullhash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Honeypots: Concepts, Approaches, and Challenges}
+      \field{type}{Article}
+      \field{year}{2007}
+      \field{dateera}{ce}
+    \endentry
+    \entry{produzione}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b90cb4d07d3db1c3f4c055bfeb96e02f}{%
+           family={Iyatiti\bibnamedelima Mokube},
+           familyi={I\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Michele\bibnamedelima Adams},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM-SE 45}%
+      }
+      \strng{namehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{fullhash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{bibnamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authorbibnamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authornamehash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \strng{authorfullhash}{b90cb4d07d3db1c3f4c055bfeb96e02f}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Honeypots: Concepts, approaches, and challenges}
+      \field{year}{2007}
+      \field{pages}{321\bibrangedash 326}
+      \range{pages}{6}
+    \endentry
+    \entry{ricerca}{book}{}
+      \name{author}{1}{}{%
+        {{hash=3392c1460e982ea5dfd24b6b6a9f8e06}{%
+           family={Spitzner},
+           familyi={S\bibinitperiod},
+           given={Lance},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{fullhash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{bibnamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authorbibnamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authornamehash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \strng{authorfullhash}{3392c1460e982ea5dfd24b6b6a9f8e06}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Honeypots tracking hackers}
+      \field{year}{2007}
+      \field{pages}{68\bibrangedash 70}
+      \range{pages}{3}
+    \endentry
+    \entry{tipologie1}{report}{}
+      \name{author}{1}{}{%
+        {{hash=4548add7842012495ed525ab3febadcb}{%
+           family={Provos},
+           familyi={P\bibinitperiod},
+           given={Nile},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Google, Inc.}%
+      }
+      \strng{namehash}{4548add7842012495ed525ab3febadcb}
+      \strng{fullhash}{4548add7842012495ed525ab3febadcb}
+      \strng{bibnamehash}{4548add7842012495ed525ab3febadcb}
+      \strng{authorbibnamehash}{4548add7842012495ed525ab3febadcb}
+      \strng{authornamehash}{4548add7842012495ed525ab3febadcb}
+      \strng{authorfullhash}{4548add7842012495ed525ab3febadcb}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Virtual Honeypot Framework}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+    \entry{malware}{article}{}
+      \name{author}{1}{}{%
+        {{hash=0871c1a9ac0b382c501fac22548286b1}{%
+           family={Tidmarsh},
+           familyi={T\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0871c1a9ac0b382c501fac22548286b1}
+      \strng{fullhash}{0871c1a9ac0b382c501fac22548286b1}
+      \strng{bibnamehash}{0871c1a9ac0b382c501fac22548286b1}
+      \strng{authorbibnamehash}{0871c1a9ac0b382c501fac22548286b1}
+      \strng{authornamehash}{0871c1a9ac0b382c501fac22548286b1}
+      \strng{authorfullhash}{0871c1a9ac0b382c501fac22548286b1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{EC-Council}
+      \field{title}{What Is a Honeypot in Cybersecurity? Types, Implementation, and Real-World Applications}
+      \field{year}{2023}
+    \endentry
+    \entry{spam}{article}{}
+      \name{author}{1}{}{%
+        {{hash=88d18397f43014b4cae6c226c3d2cab3}{%
+           family={Edwards},
+           familyi={E\bibinitperiod},
+           given={Mark\bibnamedelima Joseph},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{88d18397f43014b4cae6c226c3d2cab3}
+      \strng{fullhash}{88d18397f43014b4cae6c226c3d2cab3}
+      \strng{bibnamehash}{88d18397f43014b4cae6c226c3d2cab3}
+      \strng{authorbibnamehash}{88d18397f43014b4cae6c226c3d2cab3}
+      \strng{authornamehash}{88d18397f43014b4cae6c226c3d2cab3}
+      \strng{authorfullhash}{88d18397f43014b4cae6c226c3d2cab3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Windows IT Pro}
+      \field{title}{Antispam Honeypots Give Spammers Headaches}
+      \field{year}{2002}
+    \endentry
+    \entry{database}{article}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{DBCoreTech}
+      \field{title}{Secure Your Database Using Honeypot Architecture}
+      \field{year}{2010}
+    \endentry
+    \entry{ics}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5ba342867b750ab4884aa8c0b2b98034}{%
+           family={Arthur\bibnamedelima Jicha},
+           familyi={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Hsinchun\bibnamedelima Chen},
+           giveni={H\bibinitperiod\bibinitdelim C\bibinitperiod},
+           suffix={Mark\bibnamedelima Patton},
+           suffixi={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{5ba342867b750ab4884aa8c0b2b98034}
+      \strng{fullhash}{5ba342867b750ab4884aa8c0b2b98034}
+      \strng{bibnamehash}{5ba342867b750ab4884aa8c0b2b98034}
+      \strng{authorbibnamehash}{5ba342867b750ab4884aa8c0b2b98034}
+      \strng{authornamehash}{5ba342867b750ab4884aa8c0b2b98034}
+      \strng{authorfullhash}{5ba342867b750ab4884aa8c0b2b98034}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE}
+      \field{title}{SCADA honeypots: An in-depth analysis of Conpot}
+      \field{year}{2013}
+    \endentry
+    \entry{nistIDS}{report}{}
+      \name{author}{1}{}{%
+        {{hash=323f47ee1fc5072e1ff2e730a7a94aea}{%
+           family={Rebecca\bibnamedelima Brace},
+           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Peter\bibnamedelima Mell},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \strng{fullhash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \strng{bibnamehash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \strng{authorbibnamehash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \strng{authornamehash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \strng{authorfullhash}{323f47ee1fc5072e1ff2e730a7a94aea}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intrusion Detection Systems}
+      \field{type}{NIST Special Pubblication 800-31}
+      \field{year}{2001}
+      \field{dateera}{ce}
+    \endentry
+    \entry{ComputerSecurityThreat}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c23d465b23b02f8b89302ec057870458}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c23d465b23b02f8b89302ec057870458}
+      \strng{fullhash}{c23d465b23b02f8b89302ec057870458}
+      \strng{bibnamehash}{c23d465b23b02f8b89302ec057870458}
+      \strng{authorbibnamehash}{c23d465b23b02f8b89302ec057870458}
+      \strng{authornamehash}{c23d465b23b02f8b89302ec057870458}
+      \strng{authorfullhash}{c23d465b23b02f8b89302ec057870458}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NIST}
+      \field{title}{Computer Security Threat Monitoring and Surveillance}
+      \field{year}{1980}
+    \endentry
+    \entry{AnIntrusionDetectionModel}{book}{}
+      \name{author}{1}{}{%
+        {{hash=13c391cd697c195be5f25073da550719}{%
+           family={Denning},
+           familyi={D\bibinitperiod},
+           given={Dorothy\bibnamedelima Elizabeth},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Proceedings of the Seventh IEEE Symposium on Security}%
+        {Privacy}%
+      }
+      \strng{namehash}{13c391cd697c195be5f25073da550719}
+      \strng{fullhash}{13c391cd697c195be5f25073da550719}
+      \strng{bibnamehash}{13c391cd697c195be5f25073da550719}
+      \strng{authorbibnamehash}{13c391cd697c195be5f25073da550719}
+      \strng{authornamehash}{13c391cd697c195be5f25073da550719}
+      \strng{authorfullhash}{13c391cd697c195be5f25073da550719}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Intrusion Detection Model}
+      \field{year}{1986}
+      \field{pages}{119\bibrangedash 131}
+      \range{pages}{13}
+    \endentry
+    \entry{IDES}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b38b627f86a9cb60c20f58fdc8cea45f}{%
+           family={Lunt},
+           familyi={L\bibinitperiod},
+           given={Theresa\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \strng{fullhash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \strng{bibnamehash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \strng{authorbibnamehash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \strng{authornamehash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \strng{authorfullhash}{b38b627f86a9cb60c20f58fdc8cea45f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the Symposium on Computer Security; Threats, and Countermeasures}
+      \field{title}{IDES: An Intelligent System for Detecting Intruders}
+      \field{year}{1990}
+      \field{pages}{110\bibrangedash 121}
+      \range{pages}{12}
+    \endentry
+    \entry{taxonomy}{report}{}
+      \name{author}{1}{}{%
+        {{hash=5d7cd21ca3a5c0f072230417e28b6f63}{%
+           family={Axelsson},
+           familyi={A\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Department of Computer Engineering Chalmers University of Technology Göteborg, Sweden}%
+      }
+      \strng{namehash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \strng{fullhash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \strng{bibnamehash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \strng{authorbibnamehash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \strng{authornamehash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \strng{authorfullhash}{5d7cd21ca3a5c0f072230417e28b6f63}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intrusion Detection Systems: A Survey and Taxonomy}
+      \field{type}{techreport}
+      \field{year}{2000}
+    \endentry
+    \entry{idsFirewall}{book}{}
+      \name{author}{1}{}{%
+        {{hash=b0289a51076047b87046f20571972ccc}{%
+           family={Vacca},
+           familyi={V\bibinitperiod},
+           given={John\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0289a51076047b87046f20571972ccc}
+      \strng{fullhash}{b0289a51076047b87046f20571972ccc}
+      \strng{bibnamehash}{b0289a51076047b87046f20571972ccc}
+      \strng{authorbibnamehash}{b0289a51076047b87046f20571972ccc}
+      \strng{authornamehash}{b0289a51076047b87046f20571972ccc}
+      \strng{authorfullhash}{b0289a51076047b87046f20571972ccc}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Network and system security}
+      \field{year}{2013}
+    \endentry
+    \entry{idps}{report}{}
+      \name{author}{1}{}{%
+        {{hash=d485297edf4c7ad321508f33cb1ccabd}{%
+           family={Karen\bibnamedelima Scarfone},
+           familyi={K\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Peter\bibnamedelima Mell},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{institution}{2}{%
+        {National Institute of Standards}%
+        {Technology}%
+      }
+      \strng{namehash}{d485297edf4c7ad321508f33cb1ccabd}
+      \strng{fullhash}{d485297edf4c7ad321508f33cb1ccabd}
+      \strng{bibnamehash}{d485297edf4c7ad321508f33cb1ccabd}
+      \strng{authorbibnamehash}{d485297edf4c7ad321508f33cb1ccabd}
+      \strng{authornamehash}{d485297edf4c7ad321508f33cb1ccabd}
+      \strng{authorfullhash}{d485297edf4c7ad321508f33cb1ccabd}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Guide to Intrusion Detection and Prevention Systems (IDPS)}
+      \field{type}{techreport}
+      \field{year}{2010}
+    \endentry
+    \entry{signature}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7073c4d428cb16692a9d154e4493b1c2}{%
+           family={Christos\bibnamedelima Douligeris},
+           familyi={C\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Dimitrios\bibnamedelimb N.\bibnamedelimi Serpanos},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons}%
+      }
+      \strng{namehash}{7073c4d428cb16692a9d154e4493b1c2}
+      \strng{fullhash}{7073c4d428cb16692a9d154e4493b1c2}
+      \strng{bibnamehash}{7073c4d428cb16692a9d154e4493b1c2}
+      \strng{authorbibnamehash}{7073c4d428cb16692a9d154e4493b1c2}
+      \strng{authornamehash}{7073c4d428cb16692a9d154e4493b1c2}
+      \strng{authorfullhash}{7073c4d428cb16692a9d154e4493b1c2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Network Security: Current Status and Future Directions}
+      \field{year}{2007}
+    \endentry
+    \entry{anomaly}{report}{}
+      \name{author}{1}{}{%
+        {{hash=39482ba82b094d6416fbf0f2764fbd3a}{%
+           family={Rowayda\bibnamedelimb A.\bibnamedelimi Sadek},
+           familyi={R\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Hagar\bibnamedelimb S\bibnamedelima Elsayed},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           suffix={M\bibnamedelima Sami\bibnamedelima Soliman},
+           suffixi={M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {International Journal of Computer Science Issues}%
+      }
+      \strng{namehash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \strng{fullhash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \strng{bibnamehash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \strng{authorbibnamehash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \strng{authornamehash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \strng{authorfullhash}{39482ba82b094d6416fbf0f2764fbd3a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Effective anomaly intrusion detection system based on neural network with indicator variable and rough set reduction}
+      \field{type}{techreport}
+      \field{year}{2013}
+    \endentry
+    \entry{threat1}{inproceedings}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Threat Visualizer part 1 - Familiarization}
+      \field{year}{2023}
+    \endentry
+    \entry{threat2}{inproceedings}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Threat Visualizer part 2 - Investigation}
+      \field{year}{2023}
+    \endentry
+    \entry{model}{inproceedings}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{title}{Cyber Analyst Part 2 - Model Optimizationn}
+      \field{year}{2023}
+    \endentry
+    \entry{respond}{inproceedings}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{Darktrace RESPOND/Network}
+      \field{year}{2023}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

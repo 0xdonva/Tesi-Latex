@@ -1,0 +1,127 @@
+%\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper,oneside,onecolumn,openright]{book}
+% set the document language
+\usepackage[italian]{babel}
+% set the encoding used by your editor here (default is utf8)
+\usepackage[utf8]{inputenc}
+
+% math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+% page margins settings
+\usepackage[inner=3cm,outer=2.5cm,top=3cm,bottom=2.5cm]{geometry}
+%\usepackage{indentfirst}
+
+
+% other packages
+\usepackage{array}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{listings}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+\usepackage{wrapfig,lipsum,booktabs}
+\usepackage[sorting=none]{biblatex} %Imports biblatex package
+
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+
+% We will externalize the figures
+\usepgfplotslibrary{external}
+\tikzexternalize
+
+% custom colors
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.96}
+\definecolor{cyan}{RGB}{230,230,255}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{basicstyle=\ttfamily,
+	showstringspaces=false,
+	basicstyle=\ttfamily,
+	columns=fullflexible,
+	backgroundcolor=\color{gray!25},
+	commentstyle=\color{red},
+	keywordstyle=\color{blue},
+	frame=single,
+	breaklines=true,
+	postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\setcounter{section}{0}
+
+\addbibresource{sample.bib}
+
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumii}{\theenumi.\arabic{enumii}.}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{center}
+			{
+				\large
+				\textbf{Università  degli studi di Modena e Reggio Emilia} \\
+				\textbf{Dipartimento di Scienze Fisiche, Informatiche e Matematiche} \\
+				\vspace{\stretch{0.5}}
+				\hspace*{0cm} \hrulefill \hspace*{0cm} \\
+				\vspace{\stretch{0.5}}
+				\emph{Corso di Laurea in Informatica}
+				
+				\vspace{\stretch{12}}
+				
+				
+				\huge{\bf Valutazione di tecnologie innovative}}\\
+			\vspace{3mm}
+			{\huge{\bf per il monitoraggio della sicurezza }}\\
+			\vspace{3mm}
+			\vspace{3mm}
+			{\huge{\bf delle reti}}\\
+			\vspace{3mm}
+			\vspace{3mm}
+			
+			\vspace{\stretch{6}}
+		\end{center}
+		
+		\vspace{40mm}
+		\par
+		\noindent
+		\begin{minipage}[t]{0.47\textwidth}
+			{\large{\bf Relatore:\\
+					Prof.
+					Ferretti Luca}}\\ 
+			\\
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.47\textwidth}\raggedleft
+			{\large{\bf Candidato:\\
+					Violi Matteo}}
+		\end{minipage}
+		\vspace{20mm}
+		\begin{center}
+			%\rule[0.1cm]{15.8cm}{0.1mm}
+			\hspace*{0cm} \hrulefill \hspace*{0cm} \\
+			{\large{\bf 
+					Anno Accademico 2023/2024}}
+		\end{center}
+		
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	\include{cap1}
+	
+	\include{cap2}
+	
+	\include{cap3}
+	
+	\include{cap4}
+	
+	\chapter{Bibliografia}
+	\printbibliography[heading=none]
+	
+	\chapter{Ringraziamenti}
+	
+\end{document}

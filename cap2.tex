@@ -1,0 +1,137 @@
+\chapter{Fondamenti teorici su Honeypot e IDS}
+\begin{enumerate}
+	\item Introduzione agli honeypot
+	\begin{enumerate}
+		\item Definizione e origine degli honeypot
+		\item Tipologie di honeypot
+		\item Tpot: panoramica
+		\item Tpot: scopo e utilità in ambiente di tirocinio
+	\end{enumerate}
+	\item Teoria sugli IDS
+	\begin{enumerate}
+		\item Definizione e origine degli IDS
+		\item Tipologie di IDS
+		\item Darktrace: panoramica
+		\item Darktrace DETECT
+		\item Darktrace RESPOND
+	\end{enumerate}
+\end{enumerate}
+\section{Introduzione agli honeypot}
+\subsection{Definizione e origine degli honeypot}
+Un honeypot, come definito dal NIST (National Institute of Standards and Technology), è un sistema o una risorsa del sistema che è progettata per attrarre potenziali \textit{cracker} e \textit{intrusori}, il concetto alla base è quello di impiantare deliberatamente in un sistema apparenti vulnerabilità con lo scopo di rilevare attacchi e confondere i possibili attaccanti su quali vulnerabilità sfruttare\cite{nistHoneypot}.\\
+Lance Spitzner, direttore del SANS Institute, pone come origine degli honeypot due opere pubblicate quasi simultaneamente\cite{spitzner}. La prima risale al 1989, quando Clifford Stoll pubblicò il romanzo \textit{The Cuckoo’s Egg}, destinato a diventare uno dei classici della letteratura in materia di sicurezza informatica, nel quale racconta di come aveva scoperto un tentativo di intrusione informatica nei sistemi del Lawrence Berkeley National Laboratory, dove lavorava come astrofisico. In particolare, egli aveva notato discrepanze nelle fatture di addebito per l’uso di risorse informatiche e aveva cercato di capirne la causa, seguendo le tracce digitali lasciate, le quali lo condussero fino ad un hacker. Quest’ultimo si rivelò essere Markuss Hess, hacker tedesco, noto per aver violato più di quattrocento sistemi dell’esercito americano, per poi vendere le informazioni ai servizi di intelligence sovietici. Hess venne scoperto grazie a un’idea di Stoll: un finto portale vulnerabile del Lawrence Berkeley National Laboratory. Quest'ultimo gli permise di stabilire una connessione e localizzare il criminale. Stoll definì questa sua creazione una hoax, una sorta di burla o truffa\cite{TheCuckoosEgg}.\\
+Il secondo documento fondante sull'uso di trappole per attirare hacker malevoli fu redatto da William Cheswick, un pioniere della sicurezza informatica e l'ideatore di uno dei primi firewall. Cheswick creò quello che in quell'epoca lui chiamò roach motel, letteralmente “motel per scarafaggi”, una trappola progettata per intrappolare gli hacker\cite{cheswick}.\\
+Nel 1997, Fred Cohen ha pubblicato il Deception Toolkit (DTK) per la comunità della sicurezza informatica, fornendo una solida struttura di base per la creazione dei moderni honeypot. Successivamente, nel 1998, è stato rilasciato il Cybercop Sting, il primo honeypot ad uso commerciale progettato per essere installato su macchine della famiglia Windows NT e simulare una rete reale\cite{spitzner}.\\
+Nel corso degli anni, il termine \textit{honeypot} ha guadagnato sempre più popolarità, in quanto associato alla tradizione folkloristica dei popoli germanici\cite{bear}, slavi e celtici, secondo cui gli orsi tendono a rubare il miele dagli alveari, metafora che riflette l'idea di attirare e intrappolare gli 'hacker' simili a predatori.\\
+Secondo Lance Spitzner, un honeypot può essere molto utile poiché ricopre i tre paradigmi della sicurezza informatica: prevenzione, rilevamento e risposta. Serve per la prevenzione poiché il suo obiettivo è quello di attirare e distogliere l'attenzione di un potenziale attaccante dai sistemi realmente utilizzati. È utile al rilevamento in quanto consente di individuare ogni connessione, pacchetto e indirizzo IP che si collega ad esso. Inoltre, è fondamentale per la risposta: in primo luogo, perché qualsiasi attore malevolo collegatosi può essere successivamente bloccato da un firewall; in secondo luogo, perché analizzando i comportamenti degli attaccanti è possibile comprendere meglio i vettori di attacco\cite{spitzner}.\\
+
+\subsection{Tipologie di honeypot}
+È possibile categorizzare le diverse tipologie di honeypot in base alle risorse allocate o al contesto di utilizzo. Secondo Iyatiti Mokube e Michele Adams, professori presso la Armstrong Atlantic State University, in base al contesto di utilizzo è possibile distinguere\cite{tax}:
+\begin{itemize}
+	\item \textbf{Honeypot di Produzione}: i quali sono progettati per un utilizzo semplice, immagazzinano un numero limitato di informazioni e sono spesso implementati in contesti aziendali. Collocati all'interno della rete aziendale insieme agli altri server di produzione, raccolgono meno dati e operano a bassa intensità\cite{produzione}.
+	\item \textbf{Honeypot di Ricerca}: i quali sono finalizzati alla raccolta di informazioni sulle metodologie di attacco degli aggressori. Non forniscono un valore specifico a un'organizzazione particolare, ma sono più complessi da installare e mantenere, raccogliendo un'ampia quantità di dati\cite{ricerca}.
+\end{itemize}
+Per quanto riguarda le risorse, è possibile suddividerli in due categorie principali:
+\begin{itemize}
+	\item \textbf{Honeypot Fisici}: utilizzano macchine reali con indirizzi IP 	dedicati, simulando comportamenti modellati dal sistema. Questo modello è raramente adottato a causa dell'alto costo di acquisizione, manutenzione e delle specifiche esigenze hardware.
+	\item \textbf{Honeypot Virtuali}: consentono l'installazione e la simulazione di un host sulla rete, assegnando un indirizzo IP alla macchina virtuale. È l'approccio più diffuso, offrendo un equilibrio tra efficacia e praticità\cite{tipologie1}.
+\end{itemize}
+Recentemente, il mercato legato a questi servizi ha introdotto nuove tipologie di honeypot che estendano le funzionalità di base e incorporino tecniche di inganno, automatizzando la scalabilità su grandi reti. Le tipologie più diffuse includono:
+\begin{itemize}
+	\item \textbf{Honeypot malware}: simulano un sistema vulnerabile agli attacchi più comuni da parte di malware, consentendo uno studio approfondito del malware, delle sue origini e del suo comportamento\cite{malware}.
+	\item \textbf{Honeypot spam}: simulano relay di posta aperti o proxy aperti, comunemente utilizzati dagli spammer. Ciò consente di rivelare l'indirizzo IP dello spammer e fornire una cattura in blocco dello spam\cite{spam}.
+	\item \textbf{Honeypot database}: simulano database con possibili vulnerabilità, come ad esempio SQL Injection\cite{database}.
+	\item \textbf{Honeypot ICS}: simulano sistemi di controllo industriale come i PLC (controller logico programmabile)\cite{ics}.
+\end{itemize}
+
+\subsection{Tpot: panoramica}
+La piattaforma T-Pot, sviluppata da Deutsche Telekom Security GmbH, è distribuita sotto licenza GPL-3.0, un modello copyleft per il software libero. Basata su Debian 11 per architetture amd64 e arm64, utilizza Docker e Docker-compose per eseguire simultaneamente una vasta gamma di strumenti e sfruttare appieno le risorse hardware dell'host. \\
+\includegraphics[width=0.95\textwidth]{image/tpot.png}\\
+T-Pot offre una serie di servizi suddivisibili in cinque categorie principali:
+\begin{enumerate}
+	\item Connessione tramite SSH e Cockpit per la gestione attraverso un'interfaccia web. 
+	\item Elastic Stack, composto da Elasticsearch per l'archiviazione dei dati, Logstash per l'analisi e Kibana per la visualizzazione su dashboard.
+	\item Strumenti quali Cyberchef per la codifica e decodifica dei dati, Elasticvue per l'interazione con un cluster Elasticsearch, T-Pot Attack Map per la visualizzazione degli attacchi in tempo reale e Spiderfoot per l'automazione dell'OSINT.
+	\item Honeypot, che includono una selezione di ventidue honeypot configurabili.
+	\item Monitoraggio della rete attraverso Suricata, un motore di sicurezza di rete.
+\end{enumerate}
+
+\subsection{Tpot: scopo e utilità in ambiente di tirocinio}
+Nel contesto del tirocinio, lo scopo di T-Pot è stato duplice: inizialmente, configurare due tipologie di honeypot in un ambiente di laboratorio per valutare quale fosse la più adatta alle esigenze dell'azienda e comprendere i loro punti di forza e debolezza. Successivamente, il fine era quello di trasferire il modello selezionato in ambiente di produzione, esponendolo alla rete esterna. Le due tipologie testate includono un honeypot \textit{standalone} completo e la creazione di una rete di honeypot che invia dati all'\textit{alveare}, il quale raccoglie e trasferisce i dati a un sistema di gestione delle informazioni e degli eventi di sicurezza (SIEM). L'utilità di questo lavoro era ottenere un honeypot in grado di attirare gli attacchi lontano dai sistemi operativi effettivamente utilizzati, con la possibilità di offrire il servizio ai clienti.\\
+\newpage
+
+\section{Teoria sugli IDS}
+\subsection{Definizione e origine degli IDS}
+\begin{wraptable}{r}{0.45\textwidth}
+	\includegraphics[width=0.45\textwidth]{image/IDStimeline.png}
+\end{wraptable} 
+Un IDS (Intrusion Detection System), così definito dal NIST, è un processo di monitoraggio degli eventi che si verificano in un computer o in una rete e dell'analisi di essi per individuare segni di intrusioni, quest'ultime vengono definite come tutti i tentativi di compromettere la confidenzialità, l'integrità, la disponibilità o di aggirare meccanismi di sicurezza di un computer o di una rete\cite{nistIDS}.\\
+La prima elaborazione del concetto di sistema di IDS risale al 1980 e si deve in particolare a James Anderson, analista presso la National Security Agency. Il sistema di Anderson comprendeva un insieme di strumenti per amministratori di sistema per poter esaminare i registri di audit\cite{ComputerSecurityThreat}. Nel febbraio del 1987, Dorothy E. Denning, assistita da Peter G. Neumann presso IDS International, pubblicò un documento intitolato "An Intrusion Detection Model", nel quale introdussero miglioramenti al modello di Anderson\cite{AnIntrusionDetectionModel}. Il modello di Denning consisteva in un sistema esperto basato su regole per rilevare pattern di intrusioni note e una componente di rilevazione statistica basata su profili di utenti, sistemi host e sistemi di destinazione, diventando noto come Intrusion Detection Expert System. Nel 1990, Teresa F. Lunt, autrice di "IDES: An Intelligent System for Detecting Intruders", aggiunse l'ultimo componente al modello di Denning: una rete neurale artificiale capace di adattarsi agli eventi e modificarsi\cite{IDES}.\\
+Un sistema di rilevamento delle intrusioni (IDS) è un dispositivo software o un'applicativo che monitora una rete o i dispositivi su cui è installato. Quando rileva un'anomalia, la segnala a un sistema di raccolta di eventi di sicurezza (SIEM), che utilizza tecniche di filtraggio degli allarmi per distinguere falsi positivi da attività dannose\cite{taxonomy}.\\
+Gli IDS, come i firewall, vengono utilizzati per bloccare intrusioni nella rete, ma differiscono dalla risposta a tali intrusioni. I sistemi di rilevamento delle intrusioni possono anche avere scopi specifici se integrati con strumenti personalizzati, come l'utilizzo di un honeypot per attirare e caratterizzare il traffico dannoso\cite{idsFirewall}.\\
+Recentemente, sono stati realizzati prodotti denominati sistemi di rilevamento e prevenzione delle intrusioni (IDPS), i quali possiedono la capacità di rispondere proattivamente alle intrusioni rilevate. Gli IDPS hanno, inoltre, la capacità di fermare un attacco rilevato, registrare gli eventi, avvisare gli amministratori, bloccare la minaccia e generare rapporti. A differenza degli IDS, gli IDPS devono essere posizionati "in linea", monitorando in tempo reale per bloccare intrusioni, inviare allarmi, rifiutare pacchetti dannosi e correggere errori di rete\cite{idps}.\\
+
+
+\subsection{Tipologie di IDS}
+Secondo il NIST è possibile classificare gli IDS in base alla loro posizione o all'approccio di rilevamento, in base alla posizione si dividono in:
+\begin{itemize}
+	\item \textbf{NIDS (Network IDS)}: posizionati strategicamente nella rete, monitorano il traffico da e verso tutti i dispositivi, analizzando idealmente sia l'entrata che l'uscita. L'uso di reti neurali artificiali può migliorare i tassi di rilevamento grazie alla capacità di analizzare grandi volumi di dati in modo intelligente e apprendere dagli errori, sviluppando un sistema di avviso precoce\cite{taxonomy}.
+	\item \textbf{HIDS (Host IDS)}: operano su singoli host o dispositivi, monitorando solo i pacchetti in entrata e in uscita. Consentono l'analisi del traffico di rete criptato, una volta arrivato all'host\cite{taxonomy}.
+\end{itemize}
+In base all'approccio di rilevamento invece si dividono in:
+\begin{itemize}
+	\item \textbf{Signature-based}: ricerca pattern specifici, simile all'azione degli antivirus per individuare sequenze di byte o istruzioni malevole conosciute. Risponde velocemente ad attacchi noti, ma può non riconoscere nuovi attacchi senza pattern noti\cite{signature}.
+	\item \textbf{Anomaly-based}: utilizza l'apprendimento automatico per creare un modello di attività affidabile e confrontare il nuovo comportamento. Riesce a rilevare attacchi sconosciuti, ma potrebbe generare falsi positivi, identificando attività legittime come malevoli\cite{anomaly}.
+\end{itemize}
+
+\subsection{Darktrace: panoramica}
+\includegraphics[width=\textwidth]{image/darktrace.png}
+Darktrace, fondata nel 2013 a Cambridge, Regno Unito, da ex-dipendenti dell'intelligence governativa e matematici dell'Università di Cambridge, è un Intrusion Detection and Prevention System (IDPS) che immagazzina e analizza il traffico di rete per lunghi periodi al fine di identificare correlazioni e modelli comportamentali.\\
+Utilizzando avanzate tecniche di probabilità bayesiana e machine learning, Darktrace crea un profilo comportamentale unico per ciascun utente e dispositivo all'interno dell'ambiente di rete. Inoltre, è in grado di raggruppare gli utenti e i dispositivi in base ai loro comportamenti, consentendo così di rilevare anomalie nel caso in cui un utente o un dispositivo si discosti dal comportamento tipico del suo gruppo.\\
+Operando in tempo reale e analizzando il traffico di rete in modo continuo, Darktrace è in grado di identificare anche gli attacchi "zero-day", che non seguono schemi precedentemente noti. Per garantire l'affidabilità delle segnalazioni, Darktrace utilizza un'intelligente soglia di rilevamento che contestualizza e aggiorna costantemente le segnalazioni in base alle rilevazioni precedenti, riducendo al minimo i falsi positivi e mitigando il rischio di distorsioni dovute al tasso di base.\\
+Darktrace è composto da quattro moduli distinti: Darktrace PREVENT, Darktrace DETECT, Darktrace RESPOND e Darktrace HEAL. Tuttavia, durante il tirocinio, ci concentreremo esclusivamente sui moduli DETECT e RESPOND, in quanto sono gli unici utilizzati durante l'esperienza pratica\cite{threat1}.
+
+
+\subsection{Darktrace DETECT}
+Darktrace DETECT offre un'interfaccia che segnala le anomalie e fornisce gli strumenti per valutare se sono comportamenti legittimi nell'ambiente lavorativo o malevoli. Le violazioni dei modelli possono essere parte di un incidente dell'AI Analyst o un'allerta autonoma, comunicando agli utenti tramite l'interfaccia Threat Visualizer comportamenti anomali di dispositivi o account\cite{threat2}.\\
+Un modello è composto da tre elementi fondamentali:
+\begin{itemize}
+	\item Condizioni del modello: sono componenti che, quando soddisfatte, provocano una violazione del modello. Ogni componente è composto da una metrica con le proprie condizioni filtro, come l'utilizzo di protocolli specifici o pacchetti HTTP con User Agent rari. Questi elementi, insieme, costituiscono la logica del modello.
+	\item Modulazione del punteggio: comprende quattro modelli che influenzano il comportamento del modello quando viene attivato. Il modello standard specifica che una continua violazione nel tempo diminuisce il punteggio, ma esistono anche altre modalità: una modulazione che mantiene lo stesso punteggio nel tempo e un'altra che aumenta il punteggio dopo le prime violazioni e poi lo diminuisce.
+	\item Azioni del modello: sono azioni di sistema che possono essere attivate in risposta a una violazione del modello. Queste azioni possono includere l'invio di email o notifiche HTTP. Inoltre, è possibile selezionare una criticità diversa da quella standard o segnalare la violazione come "Informational"\cite{model}.
+\end{itemize}
+Solo una parte degli incidenti viene segnalata dall'\textit{AI Analyst} di Darktrace, il quale raccoglie molteplici informazioni rilevanti e le presenta in un formato facilmente comprensibile per l'operatore. Questo strumento investiga, analizza e categorizza le minacce all'interno dell'ambiente, identificando incidenti potenzialmente interessanti e insoliti, spesso raggruppandoli per un singolo dispositivo. Gli incidenti che coinvolgono più dispositivi sono classificati come incidenti "\textit{cross-network}". L'\textit{AI Analyst} non si limita a investigazioni autonome e non sollecitate, ma è anche disponibile su richiesta per un dispositivo selezionato da parte dell'operatore.\\
+Per quanto riguarda le allerte autonome, è compito dell'analista indagare su di esse utilizzando gli strumenti forniti da Darktrace DETECT per rispondere alle 5 W:
+\begin{enumerate}
+	\item Who?: identificare chi ha scatenato l'allarme.
+	\item What?: comprendere quale azione è stata compiuta.
+	\item When?: determinare quando sono avvenute tali operazioni.
+	\item Where?: individuare il dispositivo o il luogo in cui sono state effettuate tali operazioni.
+	\item Why?: capire il motivo per cui Darktrace ha segnalato questa anomalia.
+\end{enumerate}
+Se la legittimità dell'attività non è immediatamente chiara attraverso le informazioni fornite dalla violazione del modello, è consigliabile contattare l'utente finale, poiché la consultazione e la collaborazione con gli utenti sono fondamentali per una valutazione completa della situazione\cite{threat2}.
+
+\subsection{Darktrace RESPOND}
+Darktrace RESPOND/Network è progettato per gestire minacce di sicurezza di alto livello, come ad esempio i ransomware. Utilizzando due approcci distinti, può interrompere le connessioni malevole sia attraverso il reset TCP che integrandosi direttamente con il firewall esistente, inviando messaggi direttamente a esso.\\
+Il flag RST del protocollo TCP è una componente delle comunicazioni standard tra dispositivi: quando un endpoint riceve un pacchetto con questo flag attivato, la connessione viene immediatamente interrotta. Darktrace rileva attività sospette e, in caso di anomalie, invia pacchetti di reset TCP a entrambi i dispositivi coinvolti, sia all'interno che all'esterno della rete, per interrompere la connessione malevola. Gli indirizzi IP dei pacchetti di reset sono falsificati per far credere ai dispositivi che non provengano da Darktrace, ma l'uno dall'altro.\\
+Darktrace RESPOND può attuare una serie di azioni proattive, misurate e automatizzate in risposta a minacce informatiche confermate rilevate in tempo reale. I componenti di Darktrace RESPOND possono essere utilizzati in due modalità distinte:
+\begin{itemize}
+	\item \textbf{Modalità di conferma umana}: le azioni di Darktrace RESPOND rimarranno in 
+	sospeso fino a quando un operatore umano non conferma o ignora 
+	la segnalazione del modulo RESPOND.
+	\item \textbf{Modalità autonoma o parzialmente autonoma}: in modalità completamente 
+	autonoma, RESPOND risponde automaticamente alle minacce, mentre nella modalità 
+	parzialmente autonoma, può essere attivato autonomamente al di fuori degli orari 
+	lavorativi, ma richiede conferma umana per il resto del tempo.
+\end{itemize}
+Darktrace RESPOND reagisce alle violazioni dei modelli offrendo l'opzione di impostare 
+un inibitore, che è un'azione finalizzata a contrastare il comportamento anomalo del 
+dispositivo o dell'utente. Gli inibitori disponibili includono:
+\begin{itemize}
+	\item \textbf{Bloccare le connessioni corrispondenti}: interrompe le connessioni dal dispositivo all'endpoint di destinazione identificato nell'incidente, sulla porta di destinazione osservata.
+	\item \textbf{Imporre il pattern di vita}: consente al dispositivo di effettuare solo connessioni e trasferimenti di dati considerati normali da Darktrace, basati sui modelli di vita definiti per quel dispositivo. Qualsiasi attività che si discosti da questi modelli viene bloccata.
+	\item \textbf{Imporre il pattern di vita del gruppo}: permette al dispositivo di intraprendere le stesse connessioni e trasferimenti di dati che sono comuni tra i dispositivi nel suo gruppo di pari, basandosi sui modelli di vita del gruppo.
+	\item \textbf{Quarantena del dispositivo}: blocca tutto il traffico di rete in entrata e in uscita dal dispositivo, isolandolo dalla rete.
+	\item \textbf{Blocco di tutti i traffici in uscita}.
+	\item \textbf{Blocco di tutti i traffici in entrata}\cite{respond}.
+\end{itemize}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.19)  19 MAR 2024 21:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.19)  3 APR 2024 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Indice.tex
-(./Indice.tex
+**main.tex
+(./main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
@@ -1037,7 +1037,7 @@ ternal.code.tex
 yexternal.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zexternalshared.code.tex)))
-\openout4 = `Indice.auxlock'.
+\openout4 = `main.auxlock'.
 
 
 
@@ -1046,29 +1046,29 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 
 \@quotelevel=\count465
 \@quotereset=\count466
-(./Indice.aux)
-\openout1 = `Indice.aux'.
+(./main.aux (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux))
+\openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Info: Redefining \it@ocap on input line 46.
-LaTeX Info: Redefining \it@ccap on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Info: Redefining \it@ocap on input line 61.
+LaTeX Info: Redefining \it@ccap on input line 61.
 
 
 File italian.ldf warning: 
@@ -1076,7 +1076,7 @@ italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 46.
+italian.ldf    on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1135,7 +1135,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \c@lstlisting=\count473
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 61.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1148,13 +1148,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count474
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 61.
+LaTeX Info: Redefining \pageref on input line 61.
+LaTeX Info: Redefining \nameref on input line 61.
 
-(./Indice.out) (./Indice.out)
+(./main.out) (./main.out)
 \@outlinefile=\write5
-\openout5 = `Indice.out'.
+\openout5 = `main.out'.
 
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
@@ -1165,280 +1165,287 @@ File: italian.lbx 2022/02/02 v3.17 biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout3 = `Indice.bcf'.
+\openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Indice.bbl' not found.
-
-No file Indice.bbl.
-Package biblatex Info: Reference section=0 on input line 46.
-Package biblatex Info: Reference segment=0 on input line 46.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl)
+Package biblatex Info: Reference section=0 on input line 61.
+Package biblatex Info: Reference segment=0 on input line 61.
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.9).
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--81
+Underfull \hbox (badness 10000) in paragraph at lines 92--96
 
  []
 
 [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Indice.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write6
-\openout6 = `Indice.toc'.
+\openout6 = `main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.99 	\chapter
-              {Introduzione} [1
+l.114 	\include{cap1}
+                      [1
 
 ]
+\openout2 = `cap1.aux'.
+
+ (./cap1.tex
 Capitolo 1.
+) [2
 
-Overfull \hbox (7.83998pt too wide) in paragraph at lines 100--100
-[]\OT1/cmr/bx/n/17.28 Contestualizzazione del ti-ro-ci-nio cur-ri-co-la-re uni-
-
- []
-
-[2
 
 ]
+\openout2 = `cap2.aux'.
+
+ (./cap2.tex
 Capitolo 2.
 
-LaTeX Warning: Citation 'TheCuckoosEgg' on page 3 undefined on input line 109.
-
-
-LaTeX Warning: Citation 'cheswick' on page 3 undefined on input line 110.
-
-
-LaTeX Warning: Citation 'bear' on page 3 undefined on input line 111.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--113
+Underfull \hbox (badness 10000) in paragraph at lines 21--27
 
  []
 
 [3
 
-]
-
-LaTeX Warning: Citation 'tipologie1' on page 4 undefined on input line 119.
 
 
-LaTeX Warning: Citation 'produzione' on page 4 undefined on input line 123.
 
-
-LaTeX Warning: Citation 'ricerca' on page 4 undefined on input line 124.
-
-
-LaTeX Warning: Citation 'malware' on page 4 undefined on input line 128.
-
-
-LaTeX Warning: Citation 'spam' on page 4 undefined on input line 129.
-
-
-LaTeX Warning: Citation 'database' on page 4 undefined on input line 130.
-
-
-LaTeX Warning: Citation 'ics' on page 4 undefined on input line 131.
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 147--151
+] [4]
+<image/tpot.png, id=203, 1146.684pt x 599.23875pt>
+File: image/tpot.png Graphic file (type png)
+<use image/tpot.png>
+Package pdftex.def Info: image/tpot.png  used on input line 49.
+(pdftex.def)             Requested size: 418.96548pt x 218.94434pt.
+ [5 <./image/tpot.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
 
-[5]
-<image/IDStimeline.png, id=193, 481.8pt x 260.975pt>
+[6]
+<image/IDStimeline.png, id=225, 481.8pt x 260.975pt>
 File: image/IDStimeline.png Graphic file (type png)
 <use image/IDStimeline.png>
-Package pdftex.def Info: image/IDStimeline.png  used on input line 156.
+Package pdftex.def Info: image/IDStimeline.png  used on input line 66.
 (pdftex.def)             Requested size: 198.45662pt x 107.49423pt.
 
-
-LaTeX Warning: Citation 'ComputerSecurityThreat' on page 6 undefined on input l
-ine 158.
-
-
-LaTeX Warning: Citation 'AnIntrusionDetectionModel' on page 6 undefined on inpu
-t line 159.
-
-
-LaTeX Warning: Citation 'IDES' on page 6 undefined on input line 161.
-
-
-LaTeX Warning: Citation 'taxonomy' on page 6 undefined on input line 162.
-
-
-LaTeX Warning: Citation 'idsFirewall' on page 6 undefined on input line 163.
-
-
-LaTeX Warning: Citation 'idps' on page 6 undefined on input line 165.
-
-
-Underfull \hbox (badness 5133) in paragraph at lines 158--166
-\OT1/cmr/m/n/12 ri-sa-le al 1980 e si de-ve in par-ti-co-la-
- []
-
-
-Underfull \hbox (badness 7030) in paragraph at lines 158--166
-\OT1/cmr/m/n/12 re a Ja-mes An-der-son, ana-li-sta pres-so
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 158--166
-\OT1/cmr/m/n/12 la Na-tio-nal Se-cu-ri-ty Agen-cy. Il si-ste-
- []
-
-
-Underfull \hbox (badness 3492) in paragraph at lines 158--166
-\OT1/cmr/m/n/12 ma di An-der-son com-pren-de-va un in-sie-
- []
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 158--166
-\OT1/cmr/m/n/12 ste-ma per po-ter esa-mi-na-re i re-gi-stri di
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--166
+Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
  []
 
-
-LaTeX Warning: Citation 'taxonomy' on page 6 undefined on input line 171.
-
-[6 <./image/IDStimeline.png>]
-
-LaTeX Warning: Citation 'taxonomy' on page 7 undefined on input line 172.
-
-
-LaTeX Warning: Citation 'signature' on page 7 undefined on input line 176.
-
-
-LaTeX Warning: Citation 'anomaly' on page 7 undefined on input line 177.
+[7 <./image/IDStimeline.png>]
+<image/darktrace.png, id=248, 1433.355pt x 749.04843pt>
+File: image/darktrace.png Graphic file (type png)
+<use image/darktrace.png>
+Package pdftex.def Info: image/darktrace.png  used on input line 88.
+(pdftex.def)             Requested size: 441.01773pt x 230.46532pt.
+ [8 <./image/darktrace.png>] [9] [10]) [11]
+\openout2 = `cap3.aux'.
 
 
-LaTeX Warning: Citation 'threat1' on page 7 undefined on input line 184.
-
-
-LaTeX Warning: Citation 'threat2' on page 7 undefined on input line 187.
-
-[7]
-
-LaTeX Warning: Citation 'model' on page 8 undefined on input line 192.
-
-
-LaTeX Warning: Citation 'threat2' on page 8 undefined on input line 204.
-
-[8]
-
-LaTeX Warning: Citation 'respond' on page 9 undefined on input line 231.
-
-[9]
+(./cap3.tex
 Capitolo 3.
+[12
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--241
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-<image/fineInstallazione.png, id=216, 794.97pt x 440.39531pt>
+<image/fineInstallazione.png, id=296, 794.97pt x 440.39531pt>
 File: image/fineInstallazione.png Graphic file (type png)
 <use image/fineInstallazione.png>
-Package pdftex.def Info: image/fineInstallazione.png  used on input line 242.
-(pdftex.def)             Requested size: 286.65883pt x 158.80426pt.
-[10
-
- <./image/fineInstallazione.png>]
-Overfull \hbox (11.8359pt too wide) in paragraph at lines 254--255
+Package pdftex.def Info: image/fineInstallazione.png  used on input line 27.
+(pdftex.def)             Requested size: 352.81552pt x 195.4545pt.
+[13 <./image/fineInstallazione.png>]
+Overfull \hbox (11.8359pt too wide) in paragraph at lines 39--40
 []\OT1/cmr/m/n/12 Citrixhoneypot: uti-liz-za-to per mo-ni-to-ra-re le por-te le
 -ga-te al pro-to-col-lo HTTPS(443). 
  []
 
-<image/script.png, id=223, 1241.38782pt x 557.83406pt>
-File: image/script.png Graphic file (type png)
-<use image/script.png>
-Package pdftex.def Info: image/script.png  used on input line 258.
-(pdftex.def)             Requested size: 441.01773pt x 198.17291pt.
-[11 <./image/script.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 273--275
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+52.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [14] [15]
+\openout4 = `main.auxlock'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
- []
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "main-figure0" "\def\tikzexternalrealjob{main}\input{
+main}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "main-figure0
+" "\def\tikzexternalrealjob{main}\input{main}")...disabled (restricted).
+
+\openout4 = `main.auxlock'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "main-figure0" "\def\tikzexternalrealjob{main}\input{mai
+n}"' did NOT result in a usable output file 'main-figure0' (expected one of .pd
+f:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdfl
+atex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' o
+r something like that. Or maybe the command simply failed? Error messages can b
+e found in 'main-figure0.log'. If you continue now, I'll try to typeset the pic
+ture.
 
- []
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \end{tikzpicture}
+                       \\
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
 
-[12] [13]
+\openout4 = `main.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "main-figure1" "\def\tikzexternalrealjob{main}\input{
+main}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "main-figure1
+" "\def\tikzexternalrealjob{main}\input{main}")...disabled (restricted).
+
+\openout4 = `main.auxlock'.
+
+
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "main-figure1" "\def\tikzexternalrealjob{main}\input{mai
+n}"' did NOT result in a usable output file 'main-figure1' (expected one of .pd
+f:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdfl
+atex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' o
+r something like that. Or maybe the command simply failed? Error messages can b
+e found in 'main-figure1.log'. If you continue now, I'll try to typeset the pic
+ture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.165 \end{tikzpicture}
+                       \\
+(That was another \errmessage.)
+
+\openout4 = `main.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "main-figure2" "\def\tikzexternalrealjob{main}\input{
+main}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "main-figure2
+" "\def\tikzexternalrealjob{main}\input{main}")...disabled (restricted).
+
+\openout4 = `main.auxlock'.
+
+
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "main-figure2" "\def\tikzexternalrealjob{main}\input{mai
+n}"' did NOT result in a usable output file 'main-figure2' (expected one of .pd
+f:.jpg:.jpeg:.png:). Please verify that you have enabled system calls. For pdfl
+atex, this is 'pdflatex -shell-escape'. Sometimes it is also named 'write 18' o
+r something like that. Or maybe the command simply failed? Error messages can b
+e found in 'main-figure2.log'. If you continue now, I'll try to typeset the pic
+ture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 \end{tikzpicture}
+                       \\
+(That was another \errmessage.)
+
+[16
+
+] [17] [18]) [19] [20]
+\openout2 = `cap4.aux'.
+
+ (./cap4.tex
 Capitolo 4.
-[14
+) [21
+
+
+
 
 ]
 Capitolo 5.
+[22
 
-LaTeX Warning: Empty bibliography on input line 298.
 
-[15
 
-]
+] [23]
 Capitolo 6.
-[16
+[24
 
-] (./Indice.aux)
+] (./main.aux (./cap1.aux) (./cap2.aux) (./cap3.aux) (./cap4.aux))
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `Indice.out' has not changed.
-(rerunfilecheck)             Checksum: 90DC7AEF7AC3B155D269D02A01E7E7E9;5907.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 5B1442F04167F49F484BA12CB97E9477;5255.
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Indice
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
 
-Package logreq Info: Writing requests to 'Indice.run.xml'.
-\openout1 = `Indice.run.xml'.
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 41364 strings out of 480236
- 929864 string characters out of 5895675
- 1782492 words of memory out of 5000000
- 58644 multiletter control sequences out of 15000+600000
- 477411 words of font info for 57 fonts, out of 8000000 for 9000
+ 42704 strings out of 480236
+ 957067 string characters out of 5895675
+ 2060910 words of memory out of 5000000
+ 59819 multiletter control sequences out of 15000+600000
+ 477877 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,5n,103p,739b,1340s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/donva/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600
-pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Indice.pdf (17 pages, 326065 bytes).
+ 99i,10n,103p,1310b,2398s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/donva/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1200.600
+pk> </home/donva/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.60
+0pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (25 pages, 729853 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 503 PDF objects out of 1000 (max. 8388607)
+ 448 compressed objects within 5 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
