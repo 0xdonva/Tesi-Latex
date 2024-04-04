@@ -1,19 +1,9 @@
 \chapter{Sperimentazione con Tpot e Darktrace}
-\begin{enumerate}
-	\item Implementazione di Tpot e analisi dei risultati
-	\begin{enumerate}
-		\item Configurazione di base
-		\item Script e automazioni
-		\item Dati raccolti
-	\end{enumerate}
-	\item Monitoraggio delle reti con Darktrace
-	\begin{enumerate}
-		\item Definizione e origine degli IDS
-		\item Minacce importanti rilevate
-		\item Esempi di segnalazioni quotidiane
-	\end{enumerate}
-	\item Integrare Darktrace e Tpot per una maggiore sicurezza
-\end{enumerate}
+\begin{quote}
+	{\small In sezione $3.1$, viene illustrata l'implementazione di T-Pot, inclusa l'installazione e la configurazione iniziale ($3.1.1$), l'implementazione degli script e degli automatismi necessari per il suo funzionamento ($3.1.2$), e una panoramica sui dati raccolti durante i test ($3.1.3$).\\
+	Nella sezione $3.2$, vengono esaminate le minacce rilevanti dal punto di vista pratico, sia quelle importanti ($3.2.1$) che quelle quotidiane ($3.2.2$).\\
+	Infine, la sezione $3.3$ fornisce un riassunto dei vantaggi che possono derivare dall'integrazione di entrambi i sistemi.}
+\end{quote} 
 \section{Implementazione di Tpot e analisi dei risultati}
 \subsection{Configurazione di base}
 Per prima cosa, è fondamentale verificare di avere tutti i prerequisiti necessari per l'installazione corretta dell'honeypot, questi prerequisiti sono: un indirizzo IP fornito da un server DHCP e una connessione ad Internet, spazio di archiviazione minimo necessario, spazio di memoria RAM. Queste ultime due possono variare in base alla tipologia di installazione \textit{standalone} o \textit{distribuita}. Successivamente, dalla pagina ufficiale Github di T-Pot deve essere scaricata l'immagine ISO; si tratta di un file che contiene l'immagine del sistema operativo preconfigurato con tutti gli strumenti e le funzioni necessarie per T-Pot. Una volta scaricata l'immagine ISO, il passo successivo è l'installazione effettiva dell'immagine. Ciò deve avvenire seguendo attentamente i passaggi indicati fino al completamento dell'installazione, potendo scegliere quale dei tre tipi installare:

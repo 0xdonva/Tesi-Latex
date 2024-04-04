@@ -529,31 +529,95 @@
       \field{type}{techreport}
       \field{year}{2013}
     \endentry
-    \entry{threat1}{inproceedings}{}
+    \entry{threat1}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3dfb9fe1af913ca42054386f3270d449}{%
+           family={Holding},
+           familyi={H\bibinitperiod},
+           given={Darktrace\bibnamedelima Limited},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{fullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{bibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorbibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authornamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorfullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://customerportal.darktrace.com}}
       \field{title}{Threat Visualizer part 1 - Familiarization}
       \field{year}{2023}
     \endentry
-    \entry{threat2}{inproceedings}{}
+    \entry{threat2}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3dfb9fe1af913ca42054386f3270d449}{%
+           family={Holding},
+           familyi={H\bibinitperiod},
+           given={Darktrace\bibnamedelima Limited},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{fullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{bibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorbibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authornamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorfullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \field{extraname}{2}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://customerportal.darktrace.com}}
       \field{title}{Threat Visualizer part 2 - Investigation}
       \field{year}{2023}
     \endentry
-    \entry{model}{inproceedings}{}
+    \entry{model}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3dfb9fe1af913ca42054386f3270d449}{%
+           family={Holding},
+           familyi={H\bibinitperiod},
+           given={Darktrace\bibnamedelima Limited},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{fullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{bibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorbibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authornamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorfullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \field{extraname}{3}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://customerportal.darktrace.com}}
       \field{title}{Cyber Analyst Part 2 - Model Optimizationn}
       \field{year}{2023}
     \endentry
-    \entry{respond}{inproceedings}{}
+    \entry{respond}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=3dfb9fe1af913ca42054386f3270d449}{%
+           family={Holding},
+           familyi={H\bibinitperiod},
+           given={Darktrace\bibnamedelima Limited},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{fullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{bibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorbibnamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authornamehash}{3dfb9fe1af913ca42054386f3270d449}
+      \strng{authorfullhash}{3dfb9fe1af913ca42054386f3270d449}
+      \field{extraname}{4}
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://customerportal.darktrace.com}}
       \field{title}{Darktrace RESPOND/Network}
       \field{year}{2023}
     \endentry
